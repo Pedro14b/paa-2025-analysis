@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAA 2025 - Análise de Distribuição de Beneficiários</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        /* NAVBAR */
+        nav {
+            background-color: #333;
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            transition: background-color 0.3s;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            background-color: #667eea;
+        }
+
+        /* CONTAINER */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* SEÇÕES */
+        section {
+            background: white;
+            margin: 30px 0;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-bottom: 2px solid #4a7ba7;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        section h2 i {
+            color: #4a7ba7;
+            font-size: 1.8em;
+        }
+
+        section h3 {
+            color: #764ba2;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* O QUE FIZEMOS */
+        #oQueFizemos .card {
+            background: #f9f9f9;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+
+        #oQueFizemos .card strong {
+            color: #764ba2;
+        }
+
+        /* COMO FIZEMOS */
+        .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .tech-item {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .tech-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            transition: all 0.3s;
+        }
+
+        /* CÓDIGO */
+        .code-section {
+            text-align: center;
+        }
+
+        .code-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        pre {
+            background: #f4f4f4;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            overflow-x: auto;
+            border-radius: 4px;
+            font-size: 0.9em;
+            margin: 20px 0;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            color: #333;
+        }
+
+        /* ENVOLVIDOS */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 20px 0;
+        }
+
+        .team-member {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .team-member h4 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        .team-member p {
+            font-size: 0.95em;
+            line-height: 1.8;
+        }
+
+        .professor {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        /* PRÓXIMOS PASSOS */
+        .future-plans {
+            background: #f0f4ff;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .future-plans ol {
+            margin-left: 20px;
+        }
+
+        .future-plans li {
+            margin: 10px 0;
+            line-height: 1.8;
+        }
+
+        /* RODAPÉ */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li a {
+                padding: 10px 15px;
+                font-size: 0.9em;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            section h2 {
+                font-size: 1.5em;
+            }
+
+            .tech-stack {
+                grid-template-columns: 1fr;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <h1>PAA 2025</h1>
+            <p>Análise de Distribuição de Beneficiários do Programa de Aquisição de Alimentos</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">Universidade Estácio de Sá - Barreiros</p>
+        </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav>
+        <ul>
+            <li><a href="#entendaSimples">Entenda Simples</a></li>
+            <li><a href="#oQueFizemos">O Que Fizemos</a></li>
+            <li><a href="#comoFizemos">Como Fizemos</a></li>
+            <li><a href="#codigo">Código</a></li>
+            <li><a href="#envolvidos">Envolvidos</a></li>
+            <li><a href="#proximosPassos">Próximos Passos</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTEÚDO -->
+    <div class="container">
+        <!-- SEÇÃO 0: ENTENDA SIMPLES -->
+        <section id="entendaSimples">
+            <h2><i class="fas fa-book-open"></i> Entenda de Forma Simples</h2>
+            
+            <h3>O que é o PAA?</h3>
+            <p>O Programa de Aquisição de Alimentos (PAA) é uma iniciativa governamental que distribui alimentos para escolas, creches, organizações de assistência social e outras entidades que atendem populações em situação de vulnerabilidade.</p>
+            
+            <p>O programa funciona como um sistema de distribuição: o governo obtém alimentos e os distribui para diferentes tipos de organizações que precisam alimentar pessoas. A pergunta crítica que surge é: <strong>essa distribuição está sendo feita de forma equitativa?</strong></p>
+
+            <h3>O Problema Identificado</h3>
+            <div class="card" style="background: #fff5f5; border-left: 4px solid #e74c3c;">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                    <i class="fas fa-exclamation-triangle" style="font-size: 1.8em; color: #e74c3c;"></i>
+                    <strong style="font-size: 1.1em; color: #e74c3c;">DISTRIBUIÇÃO DESIGUAL</strong>
+                </div>
+                <p>A análise dos dados de 2025 revela uma concentração significativa de beneficiários em apenas alguns tipos de entidades, enquanto outros recebem proporcionalmente muito menos recursos.</p>
+                
+                <p style="margin-top: 15px;"><strong>Exemplo ilustrativo:</strong> Se você tiver 10 grupos necessitados e 10 unidades de recursos:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Distribuição inequitativa:</strong> 3 grupos recebem 8 unidades enquanto 7 grupos dividem apenas 2 unidades</li>
+                    <li><strong>Distribuição equitativa:</strong> Todos os 10 grupos recebem 1 unidade</li>
+                </ul>
+                <p style="margin-top: 15px;">O PAA está operando de forma similar ao primeiro cenário.</p>
+            </div>
+
+            <h3>Dados e Evidências</h3>
+            <div class="card" style="background: #f5f9ff; border-left: 4px solid #3498db;">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                    <i class="fas fa-chart-bar" style="font-size: 1.8em; color: #3498db;"></i>
+                    <strong style="font-size: 1.1em;">ACHADOS PRINCIPAIS</strong>
+                </div>
+                <ul style="margin-left: 20px; margin-top: 10px; line-height: 2;">
+                    <li><strong>34 consumidores</strong> distribuídos em diferentes pontos de atendimento</li>
+                    <li><strong>7 categorias de entidades</strong> (assistência social, educação, saúde, etc.)</li>
+                    <li><strong>79% da alocação</strong> concentrada em apenas 3 categorias</li>
+                </ul>
+
+                <p style="margin-top: 20px;"><strong>Distribuição detalhada:</strong></p>
+                <div style="margin-left: 20px; margin-top: 10px;">
+                    <div style="display: flex; align-items: center; margin: 12px 0;">
+                        <div style="width: 200px;">
+                            <strong>Organizações de Assistência Social</strong>
+                            <div style="font-size: 0.9em; color: #7f8c8d;">14 grupos (41%)</div>
+                        </div>
+                        <div style="flex: 1; height: 30px; background: linear-gradient(to right, #3498db, #2980b9); border-radius: 4px;"></div>
+                    </div>
+                    <div style="display: flex; align-items: center; margin: 12px 0;">
+                        <div style="width: 200px;">
+                            <strong>Rede Pública de Educação</strong>
+                            <div style="font-size: 0.9em; color: #7f8c8d;">9 grupos (26%)</div>
+                        </div>
+                        <div style="flex: 1; height: 30px; background: linear-gradient(to right, #3498db, #5dade2); border-radius: 4px;"></div>
+                    </div>
+                    <div style="display: flex; align-items: center; margin: 12px 0;">
+                        <div style="width: 200px;">
+                            <strong>Rede Socioassistencial</strong>
+                            <div style="font-size: 0.9em; color: #7f8c8d;">4 grupos (12%)</div>
+                        </div>
+                        <div style="flex: 1; height: 30px; background: linear-gradient(to right, #3498db, #85c1e9); border-radius: 4px;"></div>
+                    </div>
+                    <div style="display: flex; align-items: center; margin: 12px 0;">
+                        <div style="width: 200px;">
+                            <strong>Demais categorias</strong>
+                            <div style="font-size: 0.9em; color: #7f8c8d;">7 grupos (21%)</div>
+                        </div>
+                        <div style="flex: 1; height: 30px; background: linear-gradient(to right, #3498db, #aed6f1); border-radius: 4px;"></div>
+                    </div>
+                </div>
+
+                <p style="margin-top: 20px; padding: 15px; background: white; border-radius: 5px; border-left: 3px solid #3498db;">
+                    <strong>Conclusão:</strong> A concentração de beneficiários em três categorias indica uma possível falha na cobertura equitativa do programa, deixando outras necessidades sociais insuficientemente atendidas.
+                </p>
+            </div>
+
+            <h3>Impactos e Consequências</h3>
+            <div class="card" style="background: #fef5e7; border-left: 4px solid #f39c12;">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                    <i class="fas fa-chain-broken" style="font-size: 1.8em; color: #f39c12;"></i>
+                    <strong style="font-size: 1.1em;">CONSEQUÊNCIAS DA DESIGUALDADE</strong>
+                </div>
+                <ul style="margin-left: 20px; line-height: 2;">
+                    <li><strong>Insuficiência Alimentar:</strong> Populações vulneráveis em entidades sub-representadas enfrentam deficiências nutricionais</li>
+                    <li><strong>Impacto Educacional:</strong> Estudantes mal nutridos apresentam dificuldades de aprendizado e baixo desempenho acadêmico</li>
+                    <li><strong>Inequidade Sistêmica:</strong> O programa não atinge seu objetivo de reduzir desigualdades sociais</li>
+                    <li><strong>Ineficiência Orçamentária:</strong> Alocação desequilibrada resulta em subutilização de recursos em algumas áreas e sobrecarga em outras</li>
+                    <li><strong>Perpetuação da Pobreza:</strong> Grupos menos atendidos permanecem em situação de vulnerabilidade crônica</li>
+                </ul>
+            </div>
+
+            <h3>Estratégias de Solução</h3>
+            <div class="card" style="background: #f0fef7; border-left: 4px solid #27ae60;">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                    <i class="fas fa-lightbulb" style="font-size: 1.8em; color: #27ae60;"></i>
+                    <strong style="font-size: 1.1em;">RECOMENDAÇÕES ESTRATÉGICAS</strong>
+                </div>
+                
+                <div style="margin-top: 15px;">
+                    <div style="margin: 15px 0; padding: 12px; background: white; border-radius: 4px; border-left: 3px solid #27ae60;">
+                        <strong>1. Realocação Proporcional</strong>
+                        <p style="margin-top: 5px; color: #555;">Redistribuir recursos baseado em análise de necessidade real de cada categoria de entidade, considerando número de beneficiários e situação de vulnerabilidade.</p>
+                    </div>
+
+                    <div style="margin: 15px 0; padding: 12px; background: white; border-radius: 4px; border-left: 3px solid #27ae60;">
+                        <strong>2. Investigação de Causas</strong>
+                        <p style="margin-top: 5px; color: #555;">Analisar fatores que levam à concentração atual: localização geográfica, capacidade de gerenciamento, acesso à informação, critérios de elegibilidade.</p>
+                    </div>
+
+                    <div style="margin: 15px 0; padding: 12px; background: white; border-radius: 4px; border-left: 3px solid #27ae60;">
+                        <strong>3. Reforma de Critérios de Alocação</strong>
+                        <p style="margin-top: 5px; color: #555;">Estabelecer fórmula matematicamente fundamentada que considere população servida, nível de vulnerabilidade e capacidade administrativa de cada entidade.</p>
+                    </div>
+
+                    <div style="margin: 15px 0; padding: 12px; background: white; border-radius: 4px; border-left: 3px solid #27ae60;">
+                        <strong>4. Transparência e Accountability</strong>
+                        <p style="margin-top: 5px; color: #555;">Publicar dados de alocação, permitir auditoria pública e criar canais para denúncias de irregularidades.</p>
+                    </div>
+
+                    <div style="margin: 15px 0; padding: 12px; background: white; border-radius: 4px; border-left: 3px solid #27ae60;">
+                        <strong>5. Monitoramento Contínuo</strong>
+                        <p style="margin-top: 5px; color: #555;">Implementar sistema de acompanhamento mensal de distribuição para verificar aderência aos novos critérios e identificar desvios rapidamente.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Metodologia de Análise</h3>
+            <div class="card" style="background: #f4f1f9; border-left: 4px solid #8e44ad;">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                    <i class="fas fa-microscope" style="font-size: 1.8em; color: #8e44ad;"></i>
+                    <strong style="font-size: 1.1em;">PROCESSO DE INVESTIGAÇÃO</strong>
+                </div>
+
+                <p style="margin-top: 15px; color: #555;">Este projeto utilizou análise exploratória de dados (EDA) para examinar a distribuição de beneficiários do PAA 2025:</p>
+
+                <ol style="margin-left: 20px; margin-top: 10px; line-height: 2;">
+                    <li><strong>Coleta de Dados:</strong> Importação de arquivo Excel contendo registros de 34 pontos de atendimento</li>
+                    <li><strong>Limpeza e Validação:</strong> Verificação de integridade, tratamento de valores ausentes e padronização de formatos</li>
+                    <li><strong>Transformação:</strong> Cálculo de métricas agregadas, percentuais e indicadores de concentração</li>
+                    <li><strong>Visualização:</strong> Geração de gráficos estatísticos para identificar padrões e anomalias</li>
+                    <li><strong>Interpretação:</strong> Análise contextual considerando teoria de políticas públicas e equidade social</li>
+                </ol>
+
+                <p style="margin-top: 15px; padding: 10px; background: white; border-radius: 4px; border-left: 3px solid #8e44ad;">
+                    <strong>Nível de Análise:</strong> 34 pontos de distribuição de alimentos, 7 categorias de entidades, período de análise: 2025.
+                </p>
+            </div>
+
+            <h3>Relevância e Alcance</h3>
+            <div class="card" style="background: #ecf0f1; border-left: 4px solid #34495e;">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                    <i class="fas fa-globe" style="font-size: 1.8em; color: #34495e;"></i>
+                    <strong style="font-size: 1.1em;">IMPACTO POTENCIAL</strong>
+                </div>
+                <ul style="margin-left: 20px; line-height: 2;">
+                    <li>Fundamentação científica para reforma de políticas de distribuição de alimentos</li>
+                    <li>Modelo replicável para análise de outros programas sociais governamentais</li>
+                    <li>Demonstração da aplicação de ciência de dados em contexto de interesse público</li>
+                    <li>Contribuição para redução de desigualdades e melhoria da segurança alimentar</li>
+                    <li>Base empírica para advocacy junto a gestores públicos</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 1: O QUE FIZEMOS -->
+        <section id="oQueFizemos">
+            <h2><i class="fas fa-tasks"></i> O Que Fizemos</h2>
+            
+            <h3>Objetivo Principal</h3>
+            <p>Analisar a distribuição heterogênea dos beneficiários do Programa de Aquisição de Alimentos (PAA) para 2025, identificando padrões e disparidades na alocação entre diferentes tipos de consumidores.</p>
+
+            <h3>Etapas do Projeto</h3>
+            <div class="card">
+                <strong>1. Carregamento e Exploração de Dados</strong>
+                <p>Importação de arquivo Excel (export.xls) contendo informações sobre tipos e quantidades de consumidores do PAA 2025.</p>
+            </div>
+
+            <div class="card">
+                <strong>2. Análise Exploratória (EDA)</strong>
+                <p>Realização de análise inicial para compreender a estrutura dos dados, tipos de dados, valores ausentes e estatísticas descritivas.</p>
+            </div>
+
+            <div class="card">
+                <strong>3. Processamento e Cálculos</strong>
+                <p>Cálculo da quantidade total de consumidores e participação percentual de cada tipo de consumidor, criando tabelas analíticas.</p>
+            </div>
+
+            <div class="card">
+                <strong>4. Visualização de Dados</strong>
+                <p>Geração de gráficos de barras, análise de Pareto e boxplot para identificar visualmente as concentrações e disparidades.</p>
+            </div>
+
+            <div class="card">
+                <strong>5. Relatório Acadêmico</strong>
+                <p>Elaboração de relatório completo com 10 seções incluindo diagnóstico, metodologia, resultados, discussão e recomendações.</p>
+            </div>
+
+            <div class="card">
+                <strong>6. Exportação Múltipla</strong>
+                <p>Exportação da análise para Word (DOCX), HTML e CSV para diferentes públicos e plataformas.</p>
+            </div>
+
+            <h3>Principais Descobertas</h3>
+            <ul style="margin-left: 20px; line-height: 2;">
+                <li><strong>34 consumidores</strong> distribuídos entre <strong>7 tipos de entidades</strong></li>
+                <li><strong>Concentração em 3 categorias:</strong> que representam <strong>79.41%</strong> do total</li>
+                <li><strong>Top 3:</strong>
+                    <ul style="margin-top: 10px;">
+                        <li>ENTIDADE E ORGANIZAÇÃO DE ASSISTÊNCIA SOCIAL (41.18% - 14 consumidores)</li>
+                        <li>REDE PÚBLICA DE EDUCAÇÃO (26.47% - 9 consumidores)</li>
+                        <li>REDE SOCIOASSISTENCIAL (11.76% - 4 consumidores)</li>
+                    </ul>
+                </li>
+                <li><strong>Assimetria identificada:</strong> distribuição altamente concentrada com potencial para melhorias</li>
+            </ul>
+        </section>
+
+        <!-- SEÇÃO 2: COMO FIZEMOS -->
+        <section id="comoFizemos">
+            <h2><i class="fas fa-cog"></i> Como Fizemos</h2>
+            
+            <h3>Metodologia</h3>
+            <p>O projeto utilizou a abordagem de <strong>Análise Exploratória de Dados (EDA)</strong> com foco em ciência de dados aplicada a políticas públicas.</p>
+
+            <h3>Ferramentas e Tecnologias</h3>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <i class="fab fa-python"></i><br><span>Python 3.14</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-table"></i><br><span>Pandas</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-chart-bar"></i><br><span>Matplotlib</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-chart-line"></i><br><span>Seaborn</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-cloud"></i><br><span>Google Colab</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-file-word"></i><br><span>python-docx</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-file-code"></i><br><span>nbconvert</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-file-excel"></i><br><span>Excel/XLS</span>
+                </div>
+            </div>
+
+            <h3>Etapas da Análise</h3>
+            <pre><code>1. Carregamento: pd.read_excel() → arquivo export.xls
+2. Exploração: head(), info(), describe(), isnull().sum()
+3. Transformação: Rename colunas, cálculo de percentuais
+4. Análise: Estatística descritiva, cálculo de cumsum()
+5. Visualização: Barplot, Pareto, Boxplot com matplotlib/seaborn
+6. Exportação: CSV, PNG, HTML, DOCX</code></pre>
+
+            <h3>Stack Técnico</h3>
+            <ul style="margin-left: 20px; line-height: 2;">
+                <li><strong>Linguagem:</strong> Python 3.14</li>
+                <li><strong>IDE:</strong> Google Colaboratory (nuvem)</li>
+                <li><strong>Manipulação de dados:</strong> Pandas 3.0.3</li>
+                <li><strong>Visualização:</strong> Matplotlib 3.10.9 + Seaborn 0.13.2</li>
+                <li><strong>Documentos:</strong> python-docx 1.2.0</li>
+                <li><strong>Exportação:</strong> nbconvert para HTML</li>
+                <li><strong>Entrada:</strong> Excel (xlrd 2.0.1)</li>
+            </ul>
+        </section>
+
+        <!-- SEÇÃO 3: CÓDIGO -->
+        <section id="codigo">
+            <h2><i class="fas fa-code"></i> Código e Implementação</h2>
+            
+            <h3>Estrutura Principal</h3>
+            <pre><code># Importações principais
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from pathlib import Path
+
+# Carregamento de dados
+dados = pd.read_excel('TABELAS/export.xls')
+
+# Análise exploratória
+print(dados.head())
+print(dados.info())
+print(dados.describe())
+
+# Processamento
+total_consumidores = dados['Qtd Consumidor'].sum()
+dados['Percentual Consumidor'] = (dados['Qtd Consumidor'] / total_consumidores) * 100
+
+# Visualização
+plt.figure(figsize=(12, 6))
+sns.barplot(data=dados, x='Tipo Consumidor', y='Percentual Consumidor')
+plt.xticks(rotation=45, ha='right')
+plt.title('Distribuição Percentual de Consumidores - PAA 2025')
+plt.tight_layout()
+plt.savefig('bar_percentual.png', dpi=200)
+plt.show()</code></pre>
+
+            <h3>Visualizações Geradas</h3>
+            <p><strong>4 Gráficos principais (300+ DPI):</strong></p>
+            <ul style="margin-left: 20px; line-height: 2;">
+                <li><strong>bar_qtd.png:</strong> Distribuição absoluta de consumidores por tipo</li>
+                <li><strong>bar_percentual.png:</strong> Distribuição percentual de consumidores</li>
+                <li><strong>pareto.png:</strong> Análise de Pareto (80/20) com linha acumulada</li>
+                <li><strong>box_qtd.png:</strong> Boxplot para identificar outliers e variabilidade</li>
+            </ul>
+
+            <h3>Saídas Geradas</h3>
+            <pre><code># Arquivos criados:
+✓ Untitled2.ipynb                    → Notebook completo com todas as células
+✓ Untitled2.html                     → Exportação interativa do notebook
+✓ relatorio_analise_paa_2025.md      → Relatório em Markdown (10 seções)
+✓ relatorio_analise_paa_2025.docx    → Relatório em Word para apresentação
+✓ analise_percentual.csv             → Dados processados em CSV
+✓ TABELAS/*.png                      → 4 gráficos em alta resolução</code></pre>
+        </section>
+
+        <!-- SEÇÃO 4: ENVOLVIDOS -->
+        <section id="envolvidos">
+            <h2><i class="fas fa-users"></i> Envolvidos no Projeto</h2>
+            
+            <h3>Equipe de Desenvolvimento</h3>
+            <div class="team-grid">
+                <div class="team-member">
+                    <h4>Luis Fernando Souza Oliveira</h4>
+                    <p><strong>Idade:</strong> 19 anos</p>
+                    <p><strong>Papel:</strong> Pesquisador e Analista de Dados</p>
+                    <p><strong>Responsabilidades:</strong></p>
+                    <ul style="text-align: left; margin-top: 10px; font-size: 0.9em;">
+                        <li>Coleta e carregamento de dados</li>
+                        <li>Análise exploratória inicial</li>
+                        <li>Cálculo de métricas e percentuais</li>
+                        <li>Interpretação estatística</li>
+                    </ul>
+                </div>
+
+                <div class="team-member">
+                    <h4>Pedro Manuel Bugs Pereira</h4>
+                    <p><strong>Idade:</strong> 22 anos</p>
+                    <p><strong>Papel:</strong> Desenvolvedor de Visualizações e Documentador</p>
+                    <p><strong>Responsabilidades:</strong></p>
+                    <ul style="text-align: left; margin-top: 10px; font-size: 0.9em;">
+                        <li>Desenvolvimento de gráficos</li>
+                        <li>Design visual das análises</li>
+                        <li>Estrutura do notebook</li>
+                        <li>Exportação para múltiplos formatos</li>
+                    </ul>
+                </div>
+
+                <div class="team-member professor">
+                    <h4>Prof. Thiago Cunha</h4>
+                    <p><strong>Instituição:</strong> Universidade Estácio de Sá</p>
+                    <p><strong>Papel:</strong> Orientador Acadêmico</p>
+                    <p><strong>Responsabilidades:</strong></p>
+                    <ul style="text-align: left; margin-top: 10px; font-size: 0.9em;">
+                        <li>Orientação metodológica</li>
+                        <li>Validação de análises</li>
+                        <li>Feedback contínuo</li>
+                        <li>Alinhamento com objetivos</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Instituição</h3>
+            <p><strong>Universidade Estácio de Sá - Campus Barreiros</strong></p>
+            <p>Localização: São José, Santa Catarina - Brasil</p>
+            <p>Ano: 2026</p>
+        </section>
+
+        <!-- SEÇÃO 5: PRÓXIMOS PASSOS -->
+        <section id="proximosPassos">
+            <h2><i class="fas fa-rocket"></i> Próximos Passos e Futuro do Projeto</h2>
+            
+            <h3>Melhorias Planejadas</h3>
+            <div class="future-plans">
+                <ol>
+                    <li><strong>Análise Temporal:</strong> Incorporar dados históricos (2023-2024) para identificar tendências e padrões ao longo do tempo</li>
+                    
+                    <li><strong>Previsões com Machine Learning:</strong> Implementar modelos preditivos (regressão, clustering) para antecipar distribuição futura de beneficiários</li>
+                    
+                    <li><strong>Análise Geoespacial:</strong> Mapear distribuição geográfica dos beneficiários por região/estado</li>
+                    
+                    <li><strong>Dashboard Interativo:</strong> Criar dashboard em Plotly/Streamlit para visualização em tempo real</li>
+                    
+                    <li><strong>API REST:</strong> Desenvolver API em Flask/FastAPI para acesso programático aos dados</li>
+                    
+                    <li><strong>Integração com Políticas Públicas:</strong> Colaborar com gestores do PAA para implementar recomendações</li>
+                    
+                    <li><strong>Análise Comparativa:</strong> Comparar PAA com outros programas de assistência alimentar</li>
+                    
+                    <li><strong>Automatização:</strong> Criar pipeline automático de atualização de dados mensalmente</li>
+                    
+                    <li><strong>Publicação Acadêmica:</strong> Submeter resultados para conferências e periódicos científicos</li>
+                    
+                    <li><strong>Expansão de Público:</strong> Desenvolver ferramentas acessíveis para comunidades e gestores locais</li>
+                </ol>
+            </div>
+
+            <h3>Impacto Social Esperado</h3>
+            <ul style="margin-left: 20px; line-height: 2;">
+                <li>Otimização da distribuição de recursos do PAA</li>
+                <li>Identificação de grupos sub-representados</li>
+                <li>Propostas baseadas em dados para políticas públicas</li>
+                <li>Aumento da equidade no acesso a alimentos</li>
+                <li>Modelo replicável para outros programas governamentais</li>
+            </ul>
+
+            <h3>Repositório de Pesquisa</h3>
+            <p>Todos os códigos, dados processados e documentação estão disponíveis em:</p>
+            <pre><code>📁 c:\Big data Python\
+├── Untitled2.ipynb                    (Notebook completo)
+├── Untitled2.html                     (Exportação HTML)
+├── relatorio_analise_paa_2025.md      (Relatório Markdown)
+├── relatorio_analise_paa_2025.docx    (Relatório Word)
+├── index_paa.html                     (Este site)
+└── TABELAS/
+    ├── export.xls                     (Dados brutos)
+    ├── analise_percentual.csv         (Dados processados)
+    ├── bar_qtd.png
+    ├── bar_percentual.png
+    ├── pareto.png
+    └── box_qtd.png</code></pre>
+        </section>
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p><strong>PAA 2025 - Análise de Distribuição de Beneficiários</strong></p>
+        <p>Projeto de Extensão | Universidade Estácio de Sá - Barreiros</p>
+        <p>Maio de 2026 | São José, SC - Brasil</p>
+        <p style="margin-top: 20px; border-top: 1px solid #555; padding-top: 15px;">
+            Desenvolvido por: Luis Fernando Souza Oliveira & Pedro Manuel Bugs Pereira<br>
+            Orientação: Prof. Thiago Cunha
+        </p>
+    </footer>
+</body>
+</html>
