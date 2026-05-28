@@ -1,0 +1,364 @@
+# Análise de Dados do PAA em Santa Catarina (2021–2025/2026)
+
+A análise dos dados do Programa de Aquisição de Alimentos (PAA) em Santa Catarina demonstra uma transformação importante na estrutura de execução, no alcance social e na integração entre agricultura familiar, assistência social e segurança alimentar. Os documentos analisados mostram que o programa evoluiu de uma atuação mais limitada em 2021 para uma política pública mais estruturada, intersetorial e territorializada em 2025/2026.
+
+---
+
+# 1. Contexto Geral do PAA em Santa Catarina
+
+O Programa de Aquisição de Alimentos (PAA) tem como objetivo:
+
+* fortalecer a agricultura familiar;
+* garantir renda aos pequenos produtores;
+* combater a insegurança alimentar;
+* ampliar o acesso a alimentos saudáveis;
+* abastecer entidades socioassistenciais;
+* integrar políticas públicas de assistência, saúde e nutrição.
+
+Os documentos mostram que o PAA em Santa Catarina cresceu significativamente após a retomada e ampliação das políticas públicas federais de segurança alimentar entre 2023 e 2025.
+
+Segundo os dados estaduais:
+
+* 130 municípios foram habilitados ao PAA em SC pela Portaria nº 120/2023;
+* 1.310 agricultores familiares participaram do programa;
+* 414 unidades recebedoras foram cadastradas;
+* mais de 1 milhão de kg de alimentos foram adquiridos.
+
+Isso demonstra um forte crescimento da política pública no estado.
+---
+
+# 1. Introdução
+
+## 1.1 Sumário Executivo
+
+Este relatório apresenta uma análise detalhada do Programa de Aquisição de Alimentos (PAA) no estado de Santa Catarina, comparando os anos de 2021 e 2025/2026. O estudo teve como foco compreender a evolução estrutural do programa, identificar melhorias, desafios operacionais e impactos sociais relacionados à segurança alimentar e ao fortalecimento da agricultura familiar.
+
+Os dados demonstram que o PAA passou por um processo significativo de expansão e fortalecimento institucional após 2023, ampliando o número de municípios participantes, agricultores familiares cadastrados, unidades recebedoras e diversidade de alimentos distribuídos.
+
+Além disso, observou-se maior integração entre assistência social, saúde, agricultura, educação e nutrição, transformando o programa em uma política pública estruturante de combate à insegurança alimentar.
+
+---
+
+## 1.2 Descrição do Programa
+
+O Programa de Aquisição de Alimentos (PAA) é uma política pública federal vinculada ao Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome (MDS).
+
+---
+
+# 2. Comparação dos Destinatários do PAA – 2021 x 2025
+
+## Análise do gráfico de 2021
+
+O gráfico de 2021 apresenta apenas 3 categorias de destinatários:
+
+* Entidades beneficentes de saúde (CEBAS);
+* Entidades de atendimento a crianças e adolescentes;
+* Rede socioassistencial (CRAS/CREAS/Centros Pop).
+
+Cada categoria representa aproximadamente 33,3% do total.
+
+### Interpretação
+
+Em 2021 o programa possuía:
+
+* menor diversificação das unidades recebedoras;
+* estrutura mais simples;
+* menor integração entre setores públicos;
+* menor capacidade operacional;
+* foco concentrado na assistência social básica.
+
+Isso indica que o PAA ainda estava em uma fase inicial de reorganização após períodos de redução orçamentária e enfraquecimento das políticas de segurança alimentar ocorridos nacionalmente nos anos anteriores.
+
+---
+
+## Análise do gráfico de 2025
+
+Já em 2025 existe uma grande ampliação das categorias atendidas.
+
+O maior grupo passou a ser:
+
+* Entidades e organizações de assistência social (48,7%).
+
+Além disso aparecem novas categorias:
+
+* equipamentos de alimentação e nutrição;
+* programas de cozinha solidária;
+* rede pública de educação;
+* serviços públicos de saúde;
+* serviços de acolhimento;
+* entidades beneficentes de saúde;
+* CRAS/CREAS/Centros Pop.
+
+### O que isso demonstra?
+
+O programa deixou de ser apenas distributivo e passou a funcionar como:
+
+* política estruturante de segurança alimentar;
+* rede integrada entre assistência, saúde e educação;
+* política de fortalecimento territorial;
+* mecanismo permanente de abastecimento social.
+
+Isso representa um amadurecimento institucional do PAA.
+
+---
+
+# 3. O que causou essa evolução entre 2021 e 2025?
+
+## 3.1 Retomada dos investimentos federais
+
+Os documentos mostram que houve ampliação significativa dos investimentos federais no PAA após 2023.
+
+O governo federal voltou a priorizar:
+
+* segurança alimentar;
+* combate à fome;
+* agricultura familiar;
+* fortalecimento do SISAN;
+* integração com cozinhas solidárias.
+
+Além disso:
+
+* cerca de 365 mil toneladas de alimentos foram doadas nacionalmente;
+* mais de 18 mil organizações recebedoras participaram.
+
+---
+
+## 3.2 Expansão do SISAN e da articulação intersetorial
+
+Os municípios passaram a estruturar:
+
+* CONSEA;
+* CAISAN;
+* equipes intersetoriais;
+* integração entre assistência social, saúde e agricultura.
+
+O caso de Ipuaçu mostra claramente essa evolução:
+
+* adesão ao SISAN em 2024;
+* criação do CONSEA;
+* fortalecimento da CAISAN;
+* atuação integrada entre CRAS, saúde, agricultura e nutrição.
+
+---
+
+## 3.3 Crescimento da agricultura familiar
+
+O programa também se fortaleceu porque houve:
+
+* ampliação dos agricultores cadastrados;
+* aumento da diversidade de alimentos;
+* melhoria da logística;
+* incentivo econômico aos produtores.
+
+Em Ipuaçu:
+
+* o programa começou em 2021 com apenas 8 agricultores;
+* em 2026 já eram 78 agricultores cadastrados.
+
+Isso representa um crescimento extremamente relevante.
+
+---
+
+# 4. Principais Melhorias Observadas
+
+## 4.1 Aumento da diversidade alimentar
+
+Os dados de Itajaí mostram crescimento da variedade de alimentos:
+
+* frutas;
+* verduras;
+* legumes;
+* proteínas;
+* alimentos orgânicos;
+* panificados;
+* polpas;
+* biomassa de banana verde.
+
+Além disso:
+
+* 14,86% dos alimentos do PAA indígena eram orgânicos.
+
+Isso demonstra melhora nutricional da alimentação fornecida.
+
+---
+
+## 4.2 Fortalecimento das populações indígenas
+
+O PAA indígena tornou-se um dos grandes avanços observados.
+
+Os documentos mostram:
+
+* inclusão de agricultores indígenas;
+* fortalecimento da agricultura indígena;
+* redução parcial da dependência de cestas básicas;
+* protagonismo das famílias indígenas;
+* geração de renda local.
+
+Em Itajaí:
+
+* houve busca ativa de indígenas;
+* inclusão no CadÚnico;
+* articulação com lideranças indígenas e FUNAI.
+
+---
+
+# 5. Papel da Nutrição e da Educação Alimentar
+
+Os documentos destacam o fortalecimento da atuação do nutricionista.
+
+As ações incluíram:
+
+* orientação nutricional;
+* educação alimentar;
+* oficinas culinárias;
+* rodas de conversa;
+* materiais educativos;
+* controle de qualidade dos alimentos.
+
+Isso mostra que o PAA deixou de ser apenas distribuição de alimentos e passou a promover:
+
+* alimentação saudável;
+* conscientização alimentar;
+* prevenção da insegurança nutricional.
+
+---
+
+# 6. Crescimento das Cozinhas Solidárias
+
+Outro ponto importante foi a integração com o Programa Cozinha Solidária.
+
+As cozinhas solidárias:
+
+* atendem populações vulneráveis;
+* oferecem refeições gratuitas;
+* funcionam como tecnologia social de combate à fome.
+
+O PAA passou a abastecer essas cozinhas com alimentos da agricultura familiar.
+
+Isso aumentou:
+
+* o alcance do programa;
+* a eficiência da distribuição;
+* o impacto social.
+
+---
+
+# 7. Problemas e Desafios que Ainda Precisam Ser Corrigidos
+
+Apesar dos avanços, os documentos mostram diversos problemas persistentes.
+
+## 7.1 Limitações orçamentárias
+
+O principal desafio citado é:
+
+* limite orçamentário.
+
+Mesmo com expansão recente, ainda existem dificuldades para:
+
+* ampliar cobertura;
+* manter regularidade;
+* expandir municípios atendidos.
+
+---
+
+## 7.2 Burocracia
+
+Outro problema recorrente:
+
+* excesso de burocracia;
+* necessidade de documentação;
+* exigência de CNPJ para cozinhas solidárias;
+* dificuldades de cadastro.
+
+Isso dificulta o acesso de pequenos produtores e entidades comunitárias.
+
+---
+
+## 7.3 Logística e armazenamento
+
+Os documentos também destacam:
+
+* necessidade de mais veículos;
+* maior capacidade de armazenamento;
+* ampliação da estrutura logística;
+* fortalecimento das equipes técnicas.
+
+Esse problema aumenta conforme o programa cresce.
+
+---
+
+## 7.4 Baixo letramento digital
+
+Outro desafio importante:
+
+* baixa familiaridade tecnológica de muitos agricultores;
+* dificuldade no uso de sistemas digitais;
+* problemas com cadastros e prestação de contas.
+
+---
+
+# 8. Cenário Atual do Programa
+
+O cenário atual do PAA em Santa Catarina é de:
+
+## Pontos positivos
+
+* forte crescimento institucional;
+* expansão territorial;
+* aumento dos agricultores participantes;
+* fortalecimento da agricultura familiar;
+* ampliação da segurança alimentar;
+* integração entre políticas públicas;
+* protagonismo indígena;
+* maior diversidade alimentar;
+* fortalecimento das cozinhas solidárias.
+
+## Pontos críticos
+
+* necessidade de orçamento contínuo;
+* dependência de apoio governamental;
+* problemas logísticos;
+* burocracia;
+* necessidade de ampliar equipes técnicas;
+* necessidade de capacitação digital;
+* necessidade de ampliar infraestrutura.
+
+---
+
+# 9. Conclusão Geral
+
+A comparação entre 2021 e 2025 demonstra que o PAA passou por uma transformação estrutural em Santa Catarina.
+
+Em 2021:
+
+* o programa era mais limitado;
+* atendia menos categorias;
+* possuía menor alcance institucional.
+
+Já em 2025/2026:
+
+* o PAA tornou-se uma política pública integrada;
+* fortaleceu agricultura familiar;
+* ampliou segurança alimentar;
+* incorporou cozinhas solidárias;
+* fortaleceu povos indígenas;
+* ampliou diversidade nutricional;
+* criou redes intersetoriais mais eficientes.
+
+Os dados mostram que o crescimento do programa ocorreu principalmente devido:
+
+* à retomada dos investimentos públicos;
+* ao fortalecimento do SISAN;
+* à articulação intersetorial;
+* à ampliação do apoio técnico;
+* à participação dos municípios.
+
+Mesmo assim, ainda existem desafios importantes relacionados a:
+
+* orçamento;
+* logística;
+* burocracia;
+* infraestrutura;
+* inclusão digital.
+
+Portanto, o cenário atual indica que o PAA possui forte potencial de continuidade e expansão, mas depende diretamente da manutenção de investimentos públicos, do fortalecimento institucional e da integração permanente entre agricultura, assistência social, saúde e educação.
