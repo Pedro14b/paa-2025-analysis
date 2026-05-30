@@ -35,6 +35,12 @@ body{
 .title{font-size:20px;font-weight:700}
 .subtitle{color:var(--muted);font-size:13px}
 
+/* hero photo (report image) */
+.hero-photo img{display:block;max-width:160px;height:auto;border-radius:12px;box-shadow:0 8px 22px rgba(15,23,42,0.12);object-fit:cover}
+
+/* tighter brand layout when image present */
+.brand{align-items:center}
+
 .meta{display:flex;gap:12px;align-items:center}
 .meta .authors{font-weight:600}
 .meta small{color:var(--muted);font-size:13px}
@@ -76,6 +82,7 @@ ul{margin:6px 0 12px 20px}
 @media (max-width:900px){
   .stats{grid-template-columns:repeat(2,1fr)}
   .hero{flex-direction:column;align-items:flex-start}
+  .hero-photo{order:2;margin-top:12px}
 }
 
 @media (max-width:520px){
@@ -83,3 +90,7 @@ ul{margin:6px 0 12px 20px}
   .logo{width:56px;height:56px}
   .title{font-size:18px}
 }
+
+/* footer image */
+.site-footer{display:block;text-align:center;margin-top:18px}
+.site-footer img{max-width:760px;width:100%;height:auto;border-radius:10px;box-shadow:var(--shadow)}
