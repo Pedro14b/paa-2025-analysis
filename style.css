@@ -60,9 +60,16 @@ ul{margin:6px 0 12px 20px}
 
 /* print */
 @media print{
-  body{background:white}
-  .logo,.toc,.meta .print-btn{display:none}
+  @page{margin:18mm}
+  html,body{background:white;color:#000}
+  .print-btn, nav.toc{display:none !important}
+  .logo img{display:block}
   .container{padding:0;margin:0}
+  .panel{box-shadow:none;background:transparent}
+  img{max-width:100%;height:auto}
+  *{ -webkit-print-color-adjust:exact; color-adjust:exact }
+  h1,h2{page-break-after:avoid}
+  .page-break{page-break-before:always}
 }
 
 /* responsive */
